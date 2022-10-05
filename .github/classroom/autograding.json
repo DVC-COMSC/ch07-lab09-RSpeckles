@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "T1",
+      "setup": "",
+      "run": "python main.py",
+      "input": "James Robert Kurt Bill Matt",
+      "output": "[\\w, \\W]*Bill[\\w,\\W]*Robert[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T2",
+      "setup": "",
+      "run": "python main.py",
+      "input": "aa bb zzzz ZZZZ ccc",
+      "output": "[\\w,\\W]*aa[\\w,\\W]*ZZZZ",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
